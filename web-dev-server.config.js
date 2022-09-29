@@ -14,6 +14,8 @@ if (!['dev', 'prod'].includes(mode)) {
 export default {
   nodeResolve: {exportConditions: mode === 'dev' ? ['development'] : []},
   preserveSymlinks: true,
+  hostname: '192.168.0.16',
+  port: 8000,
   plugins: [
     legacyPlugin({
       polyfills: {
